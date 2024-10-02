@@ -1,0 +1,25 @@
+name: Print Repository Secrets
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  print-secrets:
+    runs-on: ubuntu-latest
+    environment: Deployment  # Specify the environment you created
+
+    steps:
+      - name: Print Secrets
+        env:
+          MY_SECRET_1: ${{ secrets.SEC_1 }}  # Access secret from the environment
+        run: |
+          echo "Printing repository secrets:"
+          echo "MY_SECRET_1: $MY_SECRET_1"
+
+          if [ "$MY_SECRET_1" = "TESTED" ]; then
+            echo "Found: MY_SECRET_1 is TESTED"
+          else
+            echo "MY_SECRET_1 is not TESTED"
+          fi
