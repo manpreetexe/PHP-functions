@@ -16,3 +16,9 @@ jobs:
         run: |
           echo "Printing repository secrets:"
           echo "MY_SECRET_1: $MY_SECRET_1"
+
+          if [ "$MY_SECRET_1" = "TESTED" ]; then
+            echo "Found: MY_SECRET_1 is TESTED"
+          else
+            echo "MY_SECRET_1 is not TESTED"
+          fi
