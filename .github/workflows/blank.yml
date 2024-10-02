@@ -3,7 +3,7 @@ name: Print Repository Secrets
 on: 
   push:
     branches:
-      - beta
+      - master
 
 jobs:
   print-secrets:
