@@ -1,0 +1,44 @@
+{
+  "name": "php-functions",
+  "version": "1.0.0",
+  "description": "A Node.js package that allows developers to easily use PHP built-in functions in their JavaScript applications. Seamlessly integrate PHP functionality into your Node.js projects and enhance your development experience.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "@types/he": "^1.2.3",
+    "@types/node": "^22.7.4",
+    "crypto": "^1.0.1",
+    "he": "^1.2.0",
+    "typescript": "^5.6.2",
+    "undici-types": "^6.19.8"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manpreetexe/PHP-functions.git"
+  },
+  "keywords": [
+    "PHP",
+    "php-functions",
+    "php-library",
+    "php-to-node",
+    "functions",
+    "php-built-in"
+  ],
+  "author": "Manpreet Singh",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/manpreetexe/PHP-functions/issues"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.11.1",
+    "globals": "^15.10.0",
+    "typescript-eslint": "^8.8.0"
+  }
+}
