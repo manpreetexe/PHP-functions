@@ -1,6 +1,6 @@
 {
   "name": "php-functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js package that allows developers to easily use PHP built-in functions in their JavaScript applications. Seamlessly integrate PHP functionality into your Node.js projects and enhance your development experience.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,7 +17,7 @@
     "build": "tsc -b"
   },
   "repository": {
-    "url": "https://github.com/manpreetexe/PHP-functions.git"
+    "url": "git+https://github.com/manpreetexe/PHP-functions.git"
   },
   "keywords": [
     "PHP",
@@ -30,7 +30,7 @@
   "author": "Manpreet Singh",
   "license": "GPL v3",
   "bugs": {
-    "url": "https://github.com/manpreetexe/PHP-functions/issues"
+    "url": "git+https://github.com/manpreetexe/PHP-functions/issues"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
