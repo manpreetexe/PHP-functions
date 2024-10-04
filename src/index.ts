@@ -19,6 +19,15 @@ import { in_array, array_search, array_keys } from "./function/array/arraySearch
 import { array_rand, array_shift, array_unshift, array_pop, array_push, array_reverse, array_sum, array_product, array_slice } from "./function/array/arrayMiscellaneous"
 import { json_encode, json_decode } from "./function/array/JSONOperations";
 
+// Date/Time  Functions
+import { date, time, mktime, gmmktime, strtotime, date_create, date_create_from_format, date_create_immutable, date_create_immutable_from_format, date_default_timezone_set, date_default_timezone_get } from "./function/dateTime/dateTimeCreation";
+import { date_format, strftime, gmdate, idate, getdate, localtime, microtime, checkdate } from "./function/dateTime/dateTimeFormatting";
+import { date_modify, date_add, date_sub, date_timestamp_set, date_timestamp_get } from "./function/dateTime/dateTimeModification";
+import { date_diff, date_interval_create_from_date_string, date_interval_format } from "./function/dateTime/dateTimeComparison";
+import { timezone_identifiers_list, timezone_abbreviations_list, timezone_name_from_abbr, timezone_name_get, timezone_offset_get, timezone_open, timezone_transitions_get, timezone_version_get } from "./function/dateTime/timeZones";
+import { cal_days_in_month, cal_from_jd, cal_to_jd, easter_date, easter_days, jddayofweek, jdmonthname, juliantojd, unixtojd } from "./function/dateTime/calendarFunctions";
+import { date_sunrise, date_isodate_set, date_offset_get, date_parse, date_parse_from_format, date_sun_info, date_sunset, gettimeofday, gmstrftime, time_nanosleep, time_sleep_until, usleep, sleep } from "./function/dateTime/dateTimeMiscellaneous";
+
 export {
   strlen, strrev, str_word_count, strpos, stripos, strrpos, strripos, substr, substr_replace, strcmp, strcasecmp, strncmp, strncasecmp,
   str_replace, str_ireplace, substr_count, strstr, stristr, strchr, strrchr, preg_replace, preg_replace_callback,
@@ -36,5 +45,12 @@ export {
   array_combine, array_intersect, array_uintersect, array_diff, array_udiff, array_diff_assoc, array_diff_uassoc, array_intersect_key, array_diff_key, array_intersect_assoc, array_intersect_uassoc,
   in_array, array_search, array_keys,
   array_rand, array_shift, array_unshift, array_pop, array_push, array_reverse, array_sum, array_product, array_slice,
-  json_encode, json_decode 
+  json_encode, json_decode,
+  date, time, mktime, gmmktime, strtotime, date_create, date_create_from_format, date_create_immutable, date_create_immutable_from_format, date_default_timezone_set, date_default_timezone_get,
+  date_format, strftime, gmdate, idate, getdate, localtime, microtime, checkdate,
+  date_modify, date_add, date_sub, date_timestamp_set, date_timestamp_get,
+  date_diff, date_interval_create_from_date_string, date_interval_format,
+  timezone_identifiers_list, timezone_abbreviations_list, timezone_name_from_abbr, timezone_name_get, timezone_offset_get, timezone_open, timezone_transitions_get, timezone_version_get,
+  cal_days_in_month, cal_from_jd, cal_to_jd, easter_date, easter_days, jddayofweek, jdmonthname, juliantojd, unixtojd,
+  date_sunrise, date_isodate_set, date_offset_get, date_parse, date_parse_from_format, date_sun_info, date_sunset, gettimeofday, gmstrftime, time_nanosleep, time_sleep_until, usleep, sleep
 }
