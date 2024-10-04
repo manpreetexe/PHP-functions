@@ -1,6 +1,6 @@
 {
   "name": "php-functions",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Node.js package that allows developers to easily use PHP built-in functions in their JavaScript applications. Seamlessly integrate PHP functionality into your Node.js projects and enhance your development experience.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,6 +9,7 @@
     "@types/node": "^22.7.4",
     "crypto": "^1.0.1",
     "he": "^1.2.0",
+    "moment-timezone": "^0.5.45",
     "typescript": "^5.6.2",
     "undici-types": "^6.19.8"
   },

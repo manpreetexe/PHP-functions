@@ -2,3 +2,4 @@ node_modules
 lib
 src/test.ts
 src/test.js
+tsconfig.tsbuildinfo
